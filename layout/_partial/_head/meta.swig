@@ -22,5 +22,5 @@
   <meta name="keywords" content="{{ config.keywords }}" />
 {% endif %}
 {% if page.tags and page.tags.length %}
-  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }}, {% endfor %}nlvi" />
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }}, {% endfor %}nzws_me" />
 {% endif %}

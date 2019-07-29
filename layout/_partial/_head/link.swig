@@ -1,5 +1,10 @@
-<link rel="apple-touch-startup-image" media="(device-width: 375px)" href="assets/apple-launch-1125x2436.png">
-<link rel="apple-touch-startup-image" media="(orientation: landscape)" href="assets/apple-touch-startup-image-2048x1496.png">
+<link rel="apple-touch-startup-image" href="https://github.com/yuzulabo.png">
+<link rel=icon type=image/png href=https://github.com/yuzulabo.png />
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/fontawesome.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/brands.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/solid.css" rel="stylesheet">
+
 {{ css('style/style') }}
 {% include "../../_script/config.swig" %}
 

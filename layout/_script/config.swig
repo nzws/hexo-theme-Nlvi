@@ -5,8 +5,8 @@
     baseUrl: "{{ url_for('/') }}",
     theme: {
       scheme: "{{ theme.scheme }}",
-      lightbox: {{ theme.lightbox }},
-      animate: {{ theme.animate }},
+      lightbox: {{ theme.lightbox or false }},
+      animate: {{ theme.animate or false }},
       search: {{ theme.search.enable or false }},
       friends: {{ Boolean(theme.friendLink) }},
       reward: {{ theme.reward.enable or false }},

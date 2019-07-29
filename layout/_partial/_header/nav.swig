@@ -1,10 +1,10 @@
 <nav class="main-nav">
   {% if theme.menu %}
-  <ul class="main-nav-list syuanpi tvIn">
+  <ul class="main-nav-list">
   {% if theme.search.enable %}
     <li class="menu-item">
-      <a href="javascript:;" id="search-btn" aria-label="Search">
-        <i class="iconfont icon-search"></i>
+      <a href="javascript:;" id="search-btn" aria-label="Search" data-no-instant>
+        <i class="fas fa-search"></i>
       </a>
     </li>
   {% endif %}
@@ -29,7 +29,7 @@
   {% if theme.scheme == 'balance' %}
     {% if is_post() %}
       <li class="menu-item">
-        <a href="javascript:;" id="switch-toc">{{ __('page.index') | upper }}</a>
+        <a href="javascript:;" id="switch-toc" data-no-instant>{{ __('page.index') | upper }}</a>
       </li>
     {% endif %}
   {% endif %}
