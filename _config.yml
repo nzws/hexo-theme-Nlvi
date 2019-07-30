@@ -8,7 +8,6 @@ menu:
   archives: /archives
   tags: /tags
   about: /about
-  RSS: /atom.xml
 
 # favicon
 favicon:

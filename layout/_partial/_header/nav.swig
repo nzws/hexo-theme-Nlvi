@@ -26,6 +26,13 @@
       </a>
     </li>
   {% endfor %}
+    <li class="menu-item">
+      <a href="/atom.xml" id="rss" target="_blank">
+        <span class="base-name">
+          <i class="fas fa-rss-square"></i>
+        </span>
+      </a>
+    </li>
   {% if theme.scheme == 'balance' %}
     {% if is_post() %}
       <li class="menu-item">
