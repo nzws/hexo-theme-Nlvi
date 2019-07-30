@@ -5,6 +5,8 @@
 <link href="https://use.fontawesome.com/releases/v5.9.0/css/brands.css" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.9.0/css/solid.css" rel="stylesheet">
 
+<script src="{{ url_for('/') }}script/lib/instantclick.min.js"></script>
+
 {{ css('style/style') }}
 {% include "../../_script/config.swig" %}
 

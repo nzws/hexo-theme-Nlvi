@@ -102,7 +102,7 @@ sub:
 # ===========================================
 
 analytics:
-  google:
+  google: UA-144848121-1
   baidu:
 
 #visit_count(Powered by busuanzi on http://busuanzi.ibruce.info/)

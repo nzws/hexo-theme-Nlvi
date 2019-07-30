@@ -1,6 +1,3 @@
-<script src="{{ url_for('/') }}script/lib/instantclick.min.js"></script>
-<script data-no-instant>InstantClick.init()</script>
-
 {{ js('https://unpkg.com/jquery@3.4.1/dist/jquery.js') }}
 
 {% if theme.lightbox %}
@@ -44,3 +41,5 @@ if (nlviconfig.theme.toc) {
 }
 </script>
 {% endif %}
+
+<script data-no-instant>InstantClick.init()</script>
