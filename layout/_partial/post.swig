@@ -22,11 +22,7 @@
         </div>
       </div>
       <h2 class="post-title syuanpi fadeInRightShort back-2">
-        {% if is_post() %}
-          {{ post.title }}
-        {% else %}
-          <a href="{{ url_for(post.path) }}">{{ post.title }}</a>
-        {% endif %}
+        <a href="{{ url_for(post.path) }}">{{ post.title }}</a>
       </h2>
     </header>
     <div class="post-content syuanpi fadeInRightShort back-3">
@@ -47,13 +43,17 @@
       </p>
     {% endif %}
     </div>
-    {% if post.tags and post.tags.length %}
-      <div class="post-tags syuanpi fadeInRightShort back-3">
-      {% for tag in post.tags %}
-        <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
-      {% endfor %}
+    <div class="post-tags syuanpi fadeInRightShort back-3">
+      <div class="share">
+        <a href="https://twitter.com/intent/tweet?text={{ post.title|url_encode }}&url={{ config.url }}{{ url_for(post.path) }}&related=nzws_me" target="_blank" class="twitter"><i class="fab fa-twitter"></i> ツイート</a>
       </div>
-    {% endif %}
+
+      {% if post.tags and post.tags.length %}
+        {% for tag in post.tags %}
+          <a href="{{ base_url() }}{{ url_for(tag.path) }}">{{ tag.name }}</a>
+        {% endfor %}
+      {% endif %}
+    </div>
     {% if is_post() %}
       {% include "_post/reward.swig" %}
       {% include "_post/copyright.swig" %}

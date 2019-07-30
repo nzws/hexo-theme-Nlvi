@@ -2,11 +2,8 @@ $(document).ready(function() {
   $('.container-inner').show();
 });
 
-var init = () => {
+InstantClick.on('change', () => {
   document.body.addEventListener('touchstart', function () {});
   var app = new Nlvi(nlviconfig);
   app.bootstarp();
-};
-
-InstantClick.on('change', init);
-window.onload = init;
+});
