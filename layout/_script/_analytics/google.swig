@@ -6,9 +6,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  InstantClick.on('change', function () {
-    gtag('config', '{{ theme.analytics.google }}', {page_path: location.pathname + location.search});
-  });
+  InstantClick.on('change', () => gtag('config', '{{ theme.analytics.google }}', {page_path: location.pathname + location.search}));
 </script>
 
 {% endif %}
