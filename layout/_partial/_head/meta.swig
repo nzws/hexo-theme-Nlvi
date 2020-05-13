@@ -8,6 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="msapplication-navbutton-color" content="#666666">
 <meta name= "format-detection" content="telephone=no" />
+<meta name="Hatena::Bookmark" content="nocomment" />
 {% if theme.favicon %}
   <link rel="apple-touch-icon"  sizes="72x72"  href="{{theme.favicon}}">
   <link rel="apple-touch-icon-precomposed"  sizes="72x72"  href="{{theme.favicon}}">
